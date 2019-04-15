@@ -1,0 +1,340 @@
+.order-board {
+	margin: 0 200px;
+	padding: 20px 60px;
+	font-weight: 100;
+	box-shadow: 0 0 8px #111;
+}
+.cart-item {
+	height: auto;
+    padding: 1em 0;
+}
+.item-info .item-name {
+	font-weight: 700;
+}
+.item-info img {
+    max-width: 100px;
+    max-height: 100px;
+}
+.cart-tit:first-of-type {
+	text-align: left;
+}
+.item-rewards {
+	color: #5b5b5b;
+}
+.order-address {
+	font-size: 16px;
+	padding: 15px 30px;
+	line-height: 1.5;
+}
+.order-total {
+	padding: 0 30px;
+	font-size: 18px;
+}
+.order-total-price {
+	float: right;
+	font-weight: 400;
+}
+
+.delivery-progress {
+	padding: 30px 70px;
+	margin: 0 200px;
+	-webkit-background-size: 30px auto;
+	background-size: 30px auto;
+	background-position: 20px center;
+	background-repeat: no-repeat;
+	background-image: url('../img/receive-progress.png');
+}
+.delivery-progress span {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 53px;
+	text-align: center;
+}
+.delivery-progress .date {
+	width: 180px;
+}
+.delivery-progress .week {
+	width: 90px;
+}
+.delivery-progress .time {
+	width: 100px;
+}
+
+.receive-or-reject {
+	margin: 30px 200px;
+	font-size: 18px;
+	line-height: 2.2;
+	color: #000;
+	text-align: right;
+}
+.receive-or-reject .reject {
+	margin-right: 30px;
+	line-height: 2.4;
+	color: #acacac;
+}
+
+
+.address-layer {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, .6);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .2s ease;
+}
+.show-layer {
+	pointer-events: auto;
+	opacity: 1;
+}
+.address-block {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 480px;
+	padding: 30px;
+	margin: 0 -240px;
+	font-weight: 100;
+	line-height: 42px;
+	color: #acacac;
+	text-align: center;
+	background: #242424;
+	transform: translate(0, -50%);
+}
+.address-element {
+	display: block;
+	margin-bottom: 24px;
+}
+.address-element span {
+	float: left;
+	width: 100px;
+	text-align: center;
+}
+.address-element input,
+.address-element select,
+.address-element textarea {
+	width: 270px;
+	padding: 10px;
+	height: 42px;
+	font-size: inherit;
+	color: #fff;
+	border: 1px solid #b4b4b4;
+	border-radius: 8px;
+	background: transparent;
+}
+.address-element option {
+	color: #333;
+	background: transparent;
+}
+.address-element textarea {
+	height: 80px;
+}
+.address-block .buy-btn {
+	float: none;
+	display: inline-block;
+	margin: auto;
+	color: #acacac;
+	border: 0 none;
+	background: #313131;
+}
+.close-lay-icon {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 12px;
+}
+.close-lay-icon img {
+	display: block;
+}
+
+.reject-row {
+	font-weight: 700;
+	color: #ff9333;
+}
+.rejecting {
+	color: #ff9933;
+	border-radius: 5px;
+	background: transparent;
+	border: 1px solid currentcolor;
+}
+.my-comment {
+	margin: 0 200px;
+}
+.my-comment-tag,
+.my-comment-tag img {
+	width: 100%;
+}
+.my-comment p {
+	position: relative;
+	bottom: 4px;
+	padding: 8px 0;
+}
+.my-comment textarea {
+	width: 100%;
+	height: 100px;
+	font-size: 16px;
+	color: #fff;
+	border: 1px solid #434343;
+	border-radius: 5px;
+	background: transparent;
+}
+.my-comment .receive-or-reject {
+	position: relative;
+	top: 10px;
+	margin: 0;
+}
+
+@media (max-width: 1440px) {
+	.order-board,
+	.delivery-progress {
+		margin: 0 50px;
+	}
+	.receive-or-reject {
+		margin: 30px 50px;
+	}
+
+	.cart-title {
+		bottom: 10px;
+		display: block;
+		font-size: 16px;
+		line-height: 40px;
+		margin-bottom: 10px;
+	}
+	.cart-tit + .cart-tit {
+		float: right;
+		width: auto;
+	}
+	.cart-item {
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
+	.delivery-progress {
+		padding: 10px 0;
+		background: none;
+		white-space: nowrap;
+	}
+	.delivery-progress span {
+		vertical-align: top;
+	}
+	.delivery-progress .date {
+		width: 120px;
+	}
+	.delivery-progress .week,
+	.delivery-progress .time {
+		width: 60px;
+	}
+	.delivery-progress .progress {
+		text-align: left;
+	}
+	.progress.show-sm {
+		display: inline-block !important;
+	}
+
+	.my-comment {
+		margin: 0;
+	}
+
+}
+@media (max-width: 768px) {
+	.order-board {
+		margin: 0;
+		padding: 5px 15px 10px;
+		border-radius: 6px;
+	}
+	.cart-title {
+		bottom: 0;
+		font-size: 14px;
+		line-height: 40px;
+		margin-bottom: 10px;
+	}
+	.cart-item {
+		padding: 0;
+		border-bottom: 1px solid #434343;
+		border-radius: 0;
+		box-shadow: none;
+	}
+	.cart-item > * {
+		width: auto;
+	}
+	.order-address {
+		padding: 5px;
+		padding-top: 6px;
+		font-size: 12px;
+		line-height: 2;
+	}
+	.order-total {
+		padding: 5px 0 0 5px;
+		font-size: 14px;
+		text-align: right;
+	}
+	.order-total-price {
+		margin-left: 10px;
+	}
+
+	.delivery-progress {
+		padding: 10px 0;
+		margin: 0;
+		background: none;
+		white-space: nowrap;
+	}
+	.delivery-progress span {
+		font-size: 12px;
+		line-height: 30px;
+		vertical-align: top;
+	}
+	.delivery-progress .date {
+		width: 80px;
+	}
+	.delivery-progress .week,
+	.delivery-progress .time {
+		width: 40px;
+	}
+	.delivery-progress .progress {
+		text-align: left;
+	}
+	.progress.show-sm {
+		display: inline-block !important;
+	}
+
+	.receive-or-reject {
+		margin: 20px 0 0;
+		font-size: 12px;
+	}
+
+	.address-block {
+		width: 80vw;
+		padding: 30px 15px 15px;
+		margin: 0 -40vw;
+		font-size: 12px;
+		line-height: 32px;
+	}
+	.address-element {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		margin-bottom: 12px;
+	}
+	.address-element input,
+	.address-element textarea {
+		height: 32px;
+	}
+	.address-element textarea {
+		height: 60px;
+	}
+	.close-lay-icon {
+		top: 10px;
+		right: 10px;
+	}
+
+	.my-comment {
+		margin: 20px;
+	}
+	.my-comment p {
+		font-size: 16px;
+	}
+}

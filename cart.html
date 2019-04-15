@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>购物车 - Star Area</title>
+
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/core.css">
+	<link rel="stylesheet" href="./css/cart.css">
+
+	<script src="./js/jquery.js"></script>
+</head>
+<body>
+	<header class="page-header">
+		<a href="./index.html"><img src="./img/logo.png" alt="" class="logo"></a>
+		<nav class="page-navigation">
+			<ul>
+				<li><a href="./index.html">首 <span class="letter-spacing">&nbsp;</span> 页</a></li>
+				<li class="active"><a href="./store.html">商 <span class="letter-spacing">&nbsp;</span> 城</a></li>
+				<li><a href="./news.html">资 <span class="letter-spacing">&nbsp;</span> 讯</a></li>
+			</ul>
+			<a class="user-panel" href="./user.html">
+				<img class="user-avatar" src="./img/avatar-1.jpg" alt="">
+				<p class="user-name">VICEX</p>
+				<p class="member-page">进入个人中心</p>
+			</a>
+			<a class="go-login" href="./user.html">VICEX</a>
+		</nav>
+	</header>
+	<main class="main cart-page">
+		<div class="cart-title hide-sm">
+			<span class="cart-tit">商品</span>
+			<span class="cart-tit">单价</span>
+			<span class="cart-tit">数量</span>
+			<span class="cart-tit">小结</span>
+			<span class="cart-tit"></span>
+		</div>
+		<div class="cart-title show-sm">
+			<label class="item-info">
+				<div>
+					<input class="checkbox" type="checkbox" />
+					<i class="checkbox-icon"></i>
+				</div>
+				全选
+			</label>
+			<a href="javascript:;" class="remove-cart-item">删除</a>
+		</div>
+		<ul class="cart-list">
+			<li class="cart-item">
+				<label class="item-info">
+					<div>
+						<input class="checkbox" type="checkbox" />
+						<i class="checkbox-icon"></i>
+					</div>
+					<img src="./img/commodity-1.png" alt="">
+					<p class="item-name">《科学之美》系列</p>
+					<p class="item-remark">浩瀚的宇宙</p>
+				</label>
+				<div class="item-price">￥15.00</div>
+				<div class="item-number">
+					<a class="item-num-modify item-num-minus">-</a>
+					<input type="text" value="1" class="item-number-input">
+					<a class="item-num-modify item-num-plus">+</a>
+					<!-- <a href="javascript:;" class="minus">-</a>
+					<span></span>
+					<a href="javascript:;" class="add">+</a> -->
+				</div>
+				<div class="item-price">￥15.00</div>
+				<a class="remove-item" href="javascript:;"><img src="./img/remove-icon.png" alt=""></a>
+			</li>
+			<li class="cart-item">
+				<label class="item-info">
+					<div>
+						<input class="checkbox" type="checkbox" />
+						<i class="checkbox-icon"></i>
+					</div>
+					<img src="./img/commodity-2.png" alt="">
+					<p class="item-name">《星域》手机壳</p>
+					<p class="item-remark">知识星球</p>
+				</label>
+				<div class="item-price">￥28.00</div>
+				<div class="item-number">
+					<a class="item-num-modify item-num-minus">-</a>
+					<input type="text" value="1" class="item-number-input">
+					<a class="item-num-modify item-num-plus">+</a>
+					<!-- <img src="./img/change-num.png" alt=""> -->
+				</div>
+				<div class="item-price">￥28.00</div>
+				<a class="remove-item" href="javascript:;"><img src="./img/remove-icon.png" alt=""></a>
+			</li>
+		</ul>
+		<div class="total">
+			<p class="total-price">合 &nbsp; 计 <span>￥43.00</span></p>
+			<a href="./order.html" class="buy-btn">结算</a>
+			<!-- <div class="total-price">合计 ￥43.00</div>
+			<a href="javascript:;" class="check-btn">结算</a> -->
+		</div>
+	</main>
+	<footer>
+		<span class="copyright">&copy;星域StarArea2019</span>
+	</footer>
+
+	<script src="./js/core.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+
+.banner {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: calc(100vh + 240px);
+	padding-top: 240px;
+	padding-left: 105px;
+	background-image: url('../img/banner.png');
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+}
+.slogan {
+	position: relative;
+	bottom: 240px;
+	font-size: 20px;
+	line-height: 2;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 1em;
+	color: #bfbfbf;
+}
+.banner .page-btn {
+	display: none;
+}
+
+.intro-section {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+
+	padding-left: 155px;
+}
+
+.intro-cards {
+	flex: 1;
+	max-width: 750px;
+	padding-top: 60px;
+}
+.intro-card {
+	margin-bottom: 72px;
+}
+.intro-card-title {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #fff;
+}
+.intro-card-content {
+	font-size: 16px;
+	line-height: 32px;
+	color: #8a8a8a;
+}
+
+.index-swiper {
+	margin-top: -36px;
+	float: right;
+	max-width: 50vw;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+	overflow: hidden;
+}
+.swiper-button-next,
+.swiper-button-prev {
+	margin-top: 0;
+	background-size: 29px auto;
+}
+.swiper-button-next {
+	right: 100px;
+	background-image: url('../img/arrow-right.png');
+}
+.swiper-button-prev {
+	left: 100px;
+	background-image: url('../img/arrow-left.png');
+}
+.index-swiper img {
+	display: block;
+}
+
+.project {
+	padding: 180px 200px 400px;
+	background: url('../img/footer-bg.png') center bottom no-repeat;
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+}
+.project-logo {
+	display: block;
+	height: 92px;
+	margin: 0 auto 180px;
+}
+.project-blocks {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+
+	font-size: 16px;
+	line-height: 2.5em;
+	color: #c8c8c8;
+}
+.project-block {
+	position: relative;
+	padding: 0 80px;
+}
+.project-block::before {
+	content: '\0020';
+	position: absolute;
+	top: 28px;
+	right: 0;
+	height: 106px;
+	border-right: 1px solid #d7d7d7;
+}
+.project-block:last-of-type::before {
+	border-right: 1px solid transparent;
+}
+.project-block > p {
+	padding-left: 5em;
+	text-indent: -5em;
+}
+.project-qrcode {
+	padding: 0 10px;
+	text-align: center;
+}
+.project-qrcode img {
+	min-width: 60px;
+}
+
+@media (max-width: 1200px) {
+	.banner {
+		height: 108vh;
+		padding: 0;
+		background-size: 150%;
+	}
+	.slogan {
+		bottom: 90px;
+	}
+	.banner .page-btn {
+		position: relative;
+		bottom: 60px;
+		display: block;
+	}
+	.intro-section {
+		padding-left: 50px;
+	}
+	.intro-card {
+		margin-bottom: 40px;
+	}
+	.intro-card + .intro-card {
+		display: none;
+	}
+	.intro-card + .download {
+		display: block;
+	}
+	.intro-card-title {
+		font-size: 20px;
+		text-align: center;
+	}
+	.download {
+		margin: 0 auto 24px;
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next,
+	.project-logo {
+		display: none;
+	}
+	.project {
+		padding: 85px 0 125px;
+	}
+	.project-blocks {
+		font-size: 12px;
+		line-height: 2;
+	}
+	.project-block {
+		padding: 0 16px;
+	}
+	.project-block::before {
+		top: 12px;
+		height: 50px;
+	}
+	.project-qrcode img {
+		width: 60px;
+	}
+}
+
+@media (max-width: 720px) {
+	.logo {
+		height: 44px;
+	}
+	.banner {
+		background-size: 360%;
+		background-position: 25% 10vh;
+	}
+	.slogan {
+		font-size: 15px;
+	}
+
+	.intro-section {
+		display: block;
+		padding: 0 45px;
+	}
+	.intro-card {
+		margin-bottom: 20px;
+	}
+	.intro-card + .intro-card {
+		display: block;
+	}
+	.intro-card-title {
+		font-size: 15px;
+		line-height: 2;
+		text-align: left;
+	}
+	.intro-card-content {
+		font-size: 12px;
+		line-height: 2;
+	}
+	.download {
+		position: relative;
+		top: 110vw;
+	}
+	.download .page-btn {
+		margin: 0 auto 24px;
+	}
+	.index-swiper {
+		position: relative;
+		bottom: 130px;
+		float: none;
+		margin-top: 0;
+		margin: 0 -45px;
+		max-width: 100vw;
+	}
+	.project {
+		padding: 0 0 75px;
+	}
+	.project-block {
+		display: none;
+	}
+}

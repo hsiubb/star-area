@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>收货地址 - Star Area</title>
+
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/core.css">
+	<link rel="stylesheet" href="./css/user.css">
+	<link rel="stylesheet" href="./css/address.css">
+
+	<script src="./js/jquery.js"></script>
+</head>
+<body>
+	<header class="page-header">
+		<a href="./index.html"><img src="./img/logo.png" alt="" class="logo"></a>
+		<nav class="page-navigation">
+			<ul>
+				<li><a href="./index.html">首 <span class="letter-spacing">&nbsp;</span> 页</a></li>
+				<li><a href="./store.html">商 <span class="letter-spacing">&nbsp;</span> 城</a></li>
+				<li><a href="./news.html">资 <span class="letter-spacing">&nbsp;</span> 讯</a></li>
+			</ul>
+			<a class="user-panel" href="./user.html">
+				<img class="user-avatar" src="./img/avatar-1.jpg" alt="">
+				<p class="user-name">VICEX</p>
+			</a>
+			<a class="go-login active" href="./user.html">VICEX</a>
+		</nav>
+	</header>
+	<main class="main order-page">
+		<section class="order-page-header">
+			<a href="./user.html" class="edit-address">所有订单</a>
+			<span class="order-page-title">管理收货地址</span>
+		</section>
+		<section class="address-list">
+			<div class="one-address default">
+				<label class="item-info" for="address_1">
+					<input class="checkbox" type="radio" id="address_1" name="address" checked />
+					<i class="checkbox-icon"></i>
+				</label>
+				<label class="address-name" for="address_1">VICEX</label>
+				<label class="address-detail" for="address_1">
+					139****1234
+					<br>广东省 广州市 从化区 太平镇 <span class="area-code">510990</span>
+					<br>广东省从化市太平开发区广州大学华软软件学院
+				</label>
+				<p class="address-col" data-col="default">默认地址</p>
+				<a class="address-col edit-col" href="javascript:;">修改</a>
+				<a class="address-col close-btn" href="javascript:;"><img src="./img/remove-icon.png" alt=""></a>
+			</div>
+			<div class="one-address">
+				<label class="item-info" for="address_2">
+					<input class="checkbox" type="radio" id="address_2" name="address" />
+					<i class="checkbox-icon"></i>
+				</label>
+				<label class="address-name" for="address_2">赵本山</label>
+				<label class="address-detail" for="address_2">
+					152****1234
+					<br>辽宁省 铁岭市 开原市 莲花镇 <span class="area-code">112305</span>
+					<br>辽宁省铁岭市开原市莲花镇莲花村石嘴沟
+				</label>
+				<p class="address-col" data-col="default">设为默认</p>
+				<a class="address-col edit-col" href="javascript:;">修改</a>
+				<a class="address-col close-btn" href="javascript:;"><img src="./img/remove-icon.png" alt=""></a>
+			</div>
+			<a href="javascript:;" class="add-address-btn">增添新地址</a>
+		</section>
+		<section class="address-layer">
+			<form class="address-block">
+				<label class="address-element">
+					<span>收件人</span>
+					<input type="text" name="name" />
+				</label>
+				<label class="address-element">
+					<span>联系号码</span>
+					<input type="text" name="phone" />
+				</label>
+				<label class="address-element">
+					<span>地区</span>
+					<input type="text" name="area" />
+				</label>
+				<label class="address-element">
+					<span>邮编</span>
+					<input type="text" name="areacode" />
+				</label>
+				<label class="address-element">
+					<span>详细地址</span>
+					<textarea cols="30" rows="10"></textarea>
+				</label>
+				<button class="buy-btn">提交</button>
+				<a href="javascript:;" class="close-layer close-lay-icon">
+					<img src="./img/remove-icon.png" alt="">
+				</a>
+			</form>
+		</section>
+	</main>
+	<footer>
+		<span class="copyright">&copy;星域StarArea2019</span>
+	</footer>
+
+	<script src="./js/core.js"></script>
+	<script>
+		$().ready(function() {
+			$('[name="address"]').on('change', function() {
+				$('[data-col="default"]').html('设为默认');
+				$('.one-address.default').removeClass('default');
+				$(this).closest('.one-address').addClass('default').find('[data-col="default"]').html('默认地址')
+			});
+			let $address_layer = $('.address-layer');
+			$('.edit-col, .add-address-btn').on('click', function() {
+				$address_layer.addClass('show-layer');
+			});
+			$('.close-layer, .address-layer').on('click', function() {
+				$address_layer.removeClass('show-layer');
+			});
+			$('.address-block').on('click', function(e) {
+				e.stopPropagation();
+			});
+		});
+	</script>
+</body>
+</html>

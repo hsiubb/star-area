@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>订单详情 - Star Area</title>
+
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/core.css">
+	<link rel="stylesheet" href="./css/cart.css">
+	<link rel="stylesheet" href="./css/order-detail.css">
+
+	<script src="./js/jquery.js"></script>
+</head>
+<body>
+	<header class="page-header">
+		<a href="./index.html"><img src="./img/logo.png" alt="" class="logo"></a>
+		<nav class="page-navigation">
+			<ul>
+				<li><a href="./index.html">首 <span class="letter-spacing">&nbsp;</span> 页</a></li>
+				<li><a href="./store.html">商 <span class="letter-spacing">&nbsp;</span> 城</a></li>
+				<li><a href="./news.html">资 <span class="letter-spacing">&nbsp;</span> 讯</a></li>
+			</ul>
+			<a class="user-panel" href="./user.html">
+				<img class="user-avatar" src="./img/avatar-1.jpg" alt="">
+				<p class="user-name">VICEX</p>
+			</a>
+			<a class="go-login active" href="./user.html">VICEX</a>
+		</nav>
+	</header>
+	<main class="main cart-page">
+		<div class="order-board">
+			<div class="cart-title">
+				<span class="cart-tit">订单号 A212345344</span>
+				<span class="cart-tit">2019/03/29</span>
+				<span class="cart-tit"></span>
+			</div>
+			<div class="cart-item">
+				<label class="item-info">
+					<img src="./img/commodity-1.png" alt="">
+					<p class="item-name">《科学之美》系列</p>
+					<p class="item-remark">浩瀚的宇宙 x1</p>
+				</label>
+				<div>
+					<p class="item-name">￥&nbsp;15.00</p>
+					<p class="item-remark item-rewards">-￥&nbsp;0.00</p>
+				</div>
+				<div class="remove-item"></div>
+			</div>
+			<p class="order-address">VICEX  13901234567  广东省从化市太平开发区广州大学华软软件学院</p>
+			<p class="order-total">总&emsp;计 <span class="order-total-price">￥ 15</span></p>
+		</div>
+		<ol class="delivery-progress">
+			<li>
+				<span class="date">2019-03-29</span>
+				<span class="week">周五</span>
+				<span class="time">17:17</span>
+				<span class="progress">商品已经下单</span>
+			</li>
+			<li>
+				<span class="date">2019-03-30</span>
+				<span class="week">周六</span>
+				<span class="time">09:50</span>
+				<span class="progress">包裹正在等待揽收</span>
+			</li>
+			<li>
+				<span class="date"></span>
+				<span class="week"></span>
+				<span class="time">13:13</span>
+				<span class="progress">广东省广州市公司 已收件</span>
+			</li>
+			<li>
+				<span class="date">2019-03-31</span>
+				<span class="week">周日</span>
+				<span class="time">10:10</span>
+				<span class="progress">广东省广州市公司 已发出</span>
+			</li>
+			<li>
+				<span class="date"></span>
+				<span class="week"></span>
+				<span class="time">12:10</span>
+				<span class="progress">已签收</span>
+			</li>
+			<li class="reject-row">
+				<span class="date">2019-04-01</span>
+				<span class="week">周一</span>
+				<span class="time">12:00</span>
+				<span class="progress">买家申请退货<br>申请原因：收到货时已损坏</span>
+			</li>
+		</ol>
+		<div class="receive-or-reject">
+			<a href="./order-detail.html" class="reject">取消申请</a>
+			<a href="javascript:;" class="buy-btn receive-btn rejecting">退货中</a>
+		</div>
+	</main>
+	<footer>
+		<span class="copyright">&copy;星域StarArea2019</span>
+	</footer>
+
+	<script src="./js/core.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>资讯 - Star Area</title>
+
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/core.css">
+	<link rel="stylesheet" href="./css/news.css">
+
+	<script src="./js/jquery.js"></script>
+	<script src="./js/swiper.min.js"></script>
+</head>
+<body>
+	<header class="page-header">
+		<a href="./index.html"><img src="./img/logo.png" alt="" class="logo"></a>
+		<nav class="page-navigation">
+			<ul>
+				<li><a href="./index.html">首 <span class="letter-spacing">&nbsp;</span> 页</a></li>
+				<li><a href="./store.html">商 <span class="letter-spacing">&nbsp;</span> 城</a></li>
+				<li class="active"><a href="./news.html">资 <span class="letter-spacing">&nbsp;</span> 讯</a></li>
+			</ul>
+			<a class="go-login" href="./login.html">登 录 / 注 册</a>
+		</nav>
+	</header>
+	<main class="main swiper-container">
+		<section class="swiper-wrapper">
+			<a href="./news-detail.html" class="news swiper-slide">
+				<img class="hide-sm" src="./img/news-1.png" alt="">
+				<img class="show-sm" src="./img/news-1.png" alt="">
+			</a>
+			<a href="./news-detail.html" class="news swiper-slide">
+				<img class="hide-sm" src="./img/news-2.png" alt="">
+				<img class="show-sm" src="./img/news-2.png" alt="">
+			</a>
+			<a href="./news-detail.html" class="news swiper-slide">
+				<img class="hide-sm" src="./img/news-3.png" alt="">
+				<img class="show-sm" src="./img/news-3.png" alt="">
+			</a>
+		</section>
+		<section class="pagination swiper-pagination">
+		</section>
+	</main>
+	<footer>
+		<span class="copyright">&copy;星域StarArea2019</span>
+	</footer>
+
+	<script src="./js/core.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			effect: "fade",
+			mousewheel: true,
+			fadeEffect: {crossFade: true},
+			pagination: {
+			    el: '.swiper-pagination',
+				renderBullet: function (index, className) {
+					return '<span class="' + className + '">0' + (index + 1) + '</span>';
+				},
+			},
+			on: {
+				resize: function() {
+					swiper.init();
+				}
+			}
+		});
+	</script>
+</body>
+</html>

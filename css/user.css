@@ -1,0 +1,139 @@
+.order-page {
+/*	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+*/
+	padding-bottom: 80px;
+	font-size: 18px;
+	color: #acacac;
+}
+.order-page-header {
+	width: 100%;
+
+	line-height: 64px;
+	border-bottom: 1px solid #434343;
+}
+.edit-address {
+	float: right;
+	color: inherit;
+}
+.order-page-title {
+	display: block;
+	padding-left: 36px;
+	background-image: url('../img/down-arrow.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.order-list {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: stretch;
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding: 20px 0;
+}
+.one-order {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 30px;
+	font-size: 14px;
+	line-height: 2;
+}
+.one-order:hover {
+	background: #1b1b1b;
+}
+.order-item-img {
+	max-width: 300px;
+}
+.order-item-name {
+	font-size: 18px;
+	font-weight: 700;
+	color: #acacac;
+}
+.item-count {
+	float: right;
+}
+.order-prices {
+	margin: 10px 0;
+}
+.order-prices dt {
+	float: left;
+	clear: left;
+}
+.order-prices dd {
+	text-align: right;
+}
+.buy-btn {
+	margin: auto;
+}
+.received {
+	color: #acacac;
+	background-color: #313131;
+}
+
+.pagination {
+	position: absolute;
+	top: auto;
+	bottom: 120px;
+	right: 50px;
+}
+
+
+@media (max-width: 1440px) {
+	.order-page {
+		padding: 80px 20px;
+	}
+}
+@media (max-width: 720px) {
+	.order-page-header {
+		font-size: 14px;
+		line-height: 40px;
+	}
+	.order-page-title {
+		padding-left: 24px;
+		-webkit-background-size: auto 8px;
+		background-size: auto 8px;
+	}
+	.pagination {
+		position: relative;
+		top: auto;
+		bottom: auto;
+		right: 0;
+	}
+	.order-list {
+		flex-direction: column;
+		overflow: visible;
+	}
+	.one-order {
+		position: relative;
+		padding: 4vw;
+		padding-left: 40vw;
+		font-size: 12px;
+		margin-bottom: 1em;
+		box-shadow: 0 0 8px #111;
+	}
+	.order-item-img {
+		position: absolute;
+		top: 4vw;
+		left: 0;
+		width: 40vw;
+	}
+	.order-item-name {
+		font-size: 14px;
+	}
+	.buy-btn {
+		margin: 0;
+		align-self: flex-end;
+	}
+}

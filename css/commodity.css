@@ -1,0 +1,213 @@
+.preview {
+	position: relative;
+	right: 150px;
+	float: right;
+	width: calc(100vh - 320px);
+	height: calc(100vh - 320px);
+	max-width: 37.5vw;
+	max-height: 37.5vw;
+}
+.commodity-info {
+	padding-top: 30px;
+	max-width: 33vw;
+	letter-spacing: .2em;
+	color: #bfbfbf;
+}
+.commidity-name, 
+.commidity-price {
+	font-size: 24px;
+	line-height: 2;
+}
+.commidity-name {
+	font-weight: 100;
+}
+.commidity-price {
+	font-weight: 400;
+}
+.commidity-intro {
+	font-size: 14px;
+	line-height: 34px;
+	font-weight: 100;
+}
+.commidity-btn {
+	float: left;
+	width: 9em;
+	font-size: 20px;
+	line-height: 2em;
+	vertical-align: middle;
+	text-align: center;
+	color: #ff9333;
+	border: 1px solid #ff9333;
+	border-radius: .5em;
+	background: #36322e;
+}
+.commidity-btn:first-of-type {
+	margin-right: 50px;
+}
+.commidity-btn:hover {
+	color: #fff;
+	background: #ff9333;
+}
+
+.pagination {
+	position: absolute;
+	right: 100px;
+	bottom: 100px;
+}
+
+.comments {
+	padding-top: 100px;
+	padding-right: 7.5em;
+	font-size: 16px;
+}
+.comment-title {
+	clear: both;
+	line-height: 2.5em;
+	text-indent: 6em;
+	letter-spacing: .2em;
+	color: #bfbfbf;
+	border-bottom: 1px solid #434343;
+}
+.one-comment {
+	position: relative;
+	margin-left: 2.5em;
+	padding: 1.5em 7.5em;
+	font-weight: 100;
+	line-height: 2em;
+	color: #bfbfbf;
+	border-bottom: 1px solid #434343;
+}
+.comment-user {
+	float: left;
+	width: 7.5em;
+	margin-left: -7.5em;
+	text-align: center;
+}
+.comment-avatar {
+	display: block;
+	width: 3.5em;
+	height: 3.5em;
+	margin: 0 auto 20px;
+	border: 1px solid #acacac;
+	border-radius: 50%;
+}
+.comment-user-name {
+	line-height: 1;
+}
+.time-stamp {
+	position: absolute;
+	left: 7.5em;
+	bottom: 1.5em;
+	line-height: 1;
+}
+.no-more {
+	padding: 1.5em 0;
+	text-align: center;
+	color: #5b5b5b;
+}
+
+@media (max-width: 1440px) {
+	.preview {
+		right: 80px;
+	}
+	.commodity-info {
+		max-width: 50vw;
+	}
+	.commidity-name {
+		font-size: 18px;
+		line-height: 1.5;
+	}
+	.commidity-price {
+		font-size: 18px;
+		font-weight: 700;
+	}
+	.preview {
+		right: 20px;
+		width: auto;
+		height: auto;
+		max-width: 40vw;
+		max-height: 40vw;
+	}
+	.commodity-info {
+		max-width: 50vw;
+		padding-top: 0;
+		letter-spacing: 0;
+	}
+	.commidity-btn {
+		font-size: 16px;
+	}
+
+	.pagination {
+		position: relative;
+		top: 0;
+		right: 0;
+		padding-top: 20px;
+	}
+
+	.comments {
+		padding-top: 0;
+		padding-right: 0;
+	}
+	.comment-title {
+		font-size: 18px;
+		text-indent: .5em;
+	}
+	.one-comment {
+		padding: 1.5em 0 1.5em 5em;
+		margin-left: 0;
+		font-size: 16px;
+	}
+	.comment-user {
+		width: 5em;
+		margin-left: -5em;
+	}
+	.comment-avatar {
+		margin-bottom: 10px;
+	}
+	.time-stamp {
+		left: 5em;
+	}
+	.no-more {
+		font-size: 14px;
+	}
+}
+@media (max-width: 720px) {
+	.commodity-info {
+		max-width: 40vw;
+		padding-top: 0;
+		letter-spacing: 0;
+	}
+	.commidity-name {
+		font-size: 16px;
+	}
+	.commidity-price {
+		font-size: 16px;
+	}
+	.commidity-intro {
+		display: none;
+	}
+	.commidity-btn {
+		font-size: 12px;
+	}
+	.commidity-btn:first-of-type {
+		margin-bottom: 1em;
+	}
+
+	.pagination {
+		position: relative;
+		top: 0;
+		right: 0;
+		padding-top: 20px;
+	}
+
+	.comment-title {
+		font-size: 14px;
+	}
+	.one-comment {
+		padding: 1.5em 0 3em 5em;
+		font-size: 12px;
+	}
+	.no-more {
+		font-size: 12px;
+	}
+}

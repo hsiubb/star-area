@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>订单详情 - Star Area</title>
+
+	<link rel="stylesheet" href="./css/swiper.min.css">
+	<link rel="stylesheet" href="./css/core.css">
+	<link rel="stylesheet" href="./css/cart.css">
+	<link rel="stylesheet" href="./css/order-detail.css">
+
+	<script src="./js/jquery.js"></script>
+</head>
+<body>
+	<header class="page-header">
+		<a href="./index.html"><img src="./img/logo.png" alt="" class="logo"></a>
+		<nav class="page-navigation">
+			<ul>
+				<li><a href="./index.html">首 <span class="letter-spacing">&nbsp;</span> 页</a></li>
+				<li><a href="./store.html">商 <span class="letter-spacing">&nbsp;</span> 城</a></li>
+				<li><a href="./news.html">资 <span class="letter-spacing">&nbsp;</span> 讯</a></li>
+			</ul>
+			<a class="user-panel" href="./user.html">
+				<img class="user-avatar" src="./img/avatar-1.jpg" alt="">
+				<p class="user-name">VICEX</p>
+			</a>
+			<a class="go-login active" href="./user.html">VICEX</a>
+		</nav>
+	</header>
+	<main class="main cart-page">
+		<div class="order-board">
+			<div class="cart-title">
+				<span class="cart-tit">订单号 A212345344</span>
+				<span class="cart-tit">2019/03/29</span>
+				<span class="cart-tit"></span>
+			</div>
+			<div class="cart-item">
+				<label class="item-info">
+					<img src="./img/commodity-1.png" alt="">
+					<p class="item-name">《科学之美》系列</p>
+					<p class="item-remark">浩瀚的宇宙 x1</p>
+				</label>
+				<div>
+					<p class="item-name">￥&nbsp;15.00</p>
+					<p class="item-remark item-rewards">-￥&nbsp;0.00</p>
+				</div>
+				<div class="remove-item"></div>
+			</div>
+			<p class="order-address">VICEX  13901234567<br>广东省从化市太平开发区广州大学华软软件学院</p>
+			<p class="order-total">总&emsp;计 <span class="order-total-price">￥ 15</span></p>
+		</div>
+		<ol class="delivery-progress">
+			<li>
+				<span class="date">2019-03-29</span>
+				<span class="week">周五</span>
+				<span class="time">17:17</span>
+				<span class="progress">商品已经下单</span>
+			</li>
+			<li>
+				<span class="date">2019-03-30</span>
+				<span class="week">周六</span>
+				<span class="time">09:50</span>
+				<span class="progress">包裹正在等待揽收</span>
+			</li>
+			<li>
+				<span class="date"></span>
+				<span class="week"></span>
+				<span class="time">13:13</span>
+				<span class="progress">广东省广州市公司 已收件</span>
+			</li>
+			<li>
+				<span class="date">2019-03-31</span>
+				<span class="week">周日</span>
+				<span class="time">10:10</span>
+				<span class="progress">广东省广州市公司 已发出</span>
+			</li>
+			<li>
+				<span class="date">2019-04-01</span>
+				<span class="week">周一</span>
+				<span class="time">12:10</span>
+				<span class="progress">快递员正在送货<br>联系电话 13550607080</span>
+			</li>
+			<li class="reject-row">
+				<span class="date"></span>
+				<span class="week"></span>
+				<span class="time">12:00</span>
+				<span class="progress">已签收</span>
+			</li>
+		</ol>
+		<div class="receive-or-reject">
+			<a href="javascript:;" class="reject">申请售后</a>
+			<a href="javascript:;" class="buy-btn receive-btn rejecting">已收货</a>
+		</div>
+		<div class="my-comment">
+			<div class="my-comment-tag">
+				<img src="./img/comment-ico.png" alt="">
+			</div>
+			<p>填写评论</p>
+			<textarea name="" id=""></textarea>
+			<div class="receive-or-reject">
+				<a href="./user.html" class="reject">返回</a>
+				<a href="./commodity.html" class="buy-btn receive-btn">提交评价</a>
+			</div>
+		</div>
+	</main>
+	<section class="address-layer">
+		<form class="address-block">
+			<label class="address-element">
+				<span>申请类型</span>
+				<select>
+					<option value="">退款</option>
+					<option value="">退货</option>
+				</select>
+			</label>
+			<label class="address-element">
+				<span>退货原因</span>
+				<select>
+					<option value="">收到货时已损坏</option>
+					<option value="">其他</option>
+				</select>
+			</label>
+			<label class="address-element">
+				<span>说明</span>
+				<textarea cols="30" rows="10"></textarea>
+			</label>
+			<a href="./reject.html" class="buy-btn submit-reject-form">提交</a>
+			<a href="javascript:;" class="close-layer close-lay-icon">
+				<img src="./img/remove-icon.png" alt="">
+			</a>
+		</form>
+	</section>
+	<footer>
+		<span class="copyright">&copy;星域StarArea2019</span>
+	</footer>
+
+	<script src="./js/core.js"></script>
+	<script>
+		$().ready(function() {
+			let $address_layer = $('.address-layer');
+			$('.receive-or-reject .reject').on('click', function() {
+				$address_layer.addClass('show-layer');
+			});
+			$('.close-layer').on('click', function() {
+				$address_layer.removeClass('show-layer');
+			});
+		});
+	</script>
+</body>
+</html>

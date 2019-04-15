@@ -1,0 +1,170 @@
+.main {
+	font-size: 14px;
+	line-height: 2.2em;
+	letter-spacing: .2em;
+	color: #acacac;
+}
+.news-title {
+    display: block;
+    width: 100%;
+	font-size: 22px;
+	line-height: 60px;
+	font-weight: 400;
+	color: #d5d5d5;
+}
+.news-subtitle {
+	float: right;
+	font-size: 16px;
+	vertical-align: middle;
+	color: #62605f;
+}
+.news-content {
+	padding: 24px 0;
+	border-top: 1px solid #acacac;
+	border-bottom: 1px solid #acacac;
+}
+.news-content p {
+	text-indent: 2.4em;
+}
+.news-content img {
+	display: block;
+	margin: 12px auto;
+}
+.news-remark {
+	display: block;
+	padding: 12px 70px;
+}
+.news-date {
+	float: right;
+}
+.news-comments {
+	padding: 70px;
+}
+
+.one-comment {
+	position: relative;
+	padding: 24px 24px 24px 124px;
+	line-height: 30px;
+}
+.one-comment:hover {
+	background: #333;
+}
+.comment-avatar {
+	position: relative;
+	top: 0;
+	float: left;
+	width: 66px;
+	height: 66px;
+	margin-left: -100px;
+	border-radius: 50%;
+}
+.user-intro,
+.comment-time {
+	font-size: 14px;
+	color: #8f8f8f;
+}
+.comment-time {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+}
+.comment-content {
+	padding-top: 10px;
+	font-size: 14px;
+	line-height: 28px;
+	color: #dadada;
+}
+
+.require-download {
+	display: block;
+	font-size: 14px;
+	letter-spacing: .2em;
+	font-weight: 100;
+	line-height: 60px;
+	text-align: center;
+	color: #fff;
+	border: 2px solid #5d5d5d;
+}
+.require-download span {
+	letter-spacing: 0;
+	text-decoration: underline;
+}
+
+
+@media (max-width: 1440px) {
+	.commodity-name {
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 720px) {
+	.main {
+		letter-spacing: 0;
+	}
+	.news-title {
+		font-size: 16px;
+	}
+	.news-subtitle {
+		line-height: 2;
+	}
+	.news-content {
+		font-size: 12px;
+		line-height: 1.6;
+	}
+	.commodity-name {
+		font-size: 40px;
+	}
+	.news-remark {
+		padding: 0 0 .5em 0;
+		font-size: 12px;
+	}
+
+	.news-comments {
+		padding: 0;
+	}
+	.comment-title {
+		font-size: 14px;
+		text-indent: .5em;
+	}
+	.one-comment {
+		padding: 1em 0 1.5em 5em;
+		margin-left: 0;
+		font-size: 12px;
+		border-top: 1px solid #313131;
+	}
+	.comment-avatar {
+		top: 10px;
+		width: 3.5em;
+		height: 3.5em;
+		margin-left: -5em;
+	}
+	.user-name {
+		font-size: 14px;
+	}
+	.user-intro {
+		font-size: 12px;
+		line-height: 1;
+	}
+	.comment-time {
+		top: 16px;
+		right: 0;
+		font-size: 12px;
+	}
+	.comment-content {
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.time-stamp {
+		left: 5em;
+	}
+	.no-more {
+		font-size: 12px;
+	}
+
+	.require-download {
+		font-size: 12px;
+		letter-spacing: 0;
+		line-height: 3;
+	}
+}
+

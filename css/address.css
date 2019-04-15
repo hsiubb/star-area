@@ -1,0 +1,212 @@
+.address-list {
+	margin: 10px 110px;
+}
+.one-address {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 2;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.one-address.default,
+.one-address:hover {
+	background: #434343;
+}
+.one-address .item-info {
+	position: relative;
+	flex: 0;
+	align-self: stretch;
+}
+.one-address .checkbox-icon {
+	top: 14px;
+}
+.one-address .address-name {
+	width: 100px;
+	line-height: 26px;
+	align-self: stretch;
+	text-align: center;
+}
+.one-address .address-detail {
+	flex: 1;
+	font-size: 14px;
+}
+.address-col {
+	min-width: 100px;
+	color: inherit;
+	text-align: center;
+}
+a.address-col:hover {
+	text-decoration: underline;
+}
+
+.add-address-btn {
+	display: block;
+	width: 20em;
+	margin: auto;
+	font-size: 18px;
+	line-height: 3;
+	text-align: center;
+	color: #fff;
+	border: 1px solid currentcolor;
+	border-radius: .5em;
+}
+
+.address-layer {
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, .6);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .2s ease;
+}
+.show-layer {
+	pointer-events: auto;
+	opacity: 1;
+}
+.address-block {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 480px;
+	padding: 30px;
+	margin: 0 -240px;
+	font-weight: 100;
+	line-height: 42px;
+	color: #acacac;
+	text-align: center;
+	background: #242424;
+	transform: translate(0, -50%);
+}
+.address-element {
+	display: block;
+	margin-bottom: 24px;
+}
+.address-element span {
+	float: left;
+	width: 100px;
+	text-align: center;
+}
+.address-element input,
+.address-element textarea {
+	width: 270px;
+	padding: 10px;
+	height: 42px;
+	font-size: inherit;
+	color: #fff;
+	border: 1px solid #b4b4b4;
+	border-radius: 8px;
+	background: transparent;
+}
+.address-element textarea {
+	height: 80px;
+}
+.buy-btn {
+	float: none;
+	margin: auto;
+	border: 0 none;
+}
+.close-lay-icon {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 12px;
+}
+.close-lay-icon img {
+	display: block;
+}
+
+@media (max-width: 1440px) {
+	.one-address {
+		position: relative;
+		padding-bottom: 40px;
+	}
+	.address-col {
+		position: absolute;
+		left: 10px;
+		bottom: 5px;
+		text-align: left;
+	}
+	.add-address-btn {
+		width: 100%;
+		font-size: 14px;
+	}
+	.address-col.edit-col {
+		left: 50%;
+		width: 80px;
+		margin-left: -39px;
+	}
+	.address-col.close-btn {
+		min-width: 14px;
+		width: 14px;
+		top: 10px;
+		right: 10px;
+		bottom: auto;
+		left: auto;
+	}
+}
+
+@media (max-width: 720px) {
+	.address-list {
+		margin: 10px 0;
+	}
+	.one-address {
+		position: relative;
+		padding-bottom: 30px;
+		font-size: 12px;
+		flex-direction: column;
+		align-items: stretch;
+	}
+	.one-address .address-name {
+		position: relative;
+		bottom: 3px;
+		text-align: left;
+	}
+	.one-address .address-detail {
+		font-size: inherit;
+	}
+	.one-address .item-info {
+		position: absolute;
+		opacity: 0;
+	}
+
+	.address-block {
+		width: 80vw;
+		padding: 30px 15px 15px;
+		margin: 0 -40vw;
+		font-size: 12px;
+		line-height: 32px;
+	}
+	.address-element {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		margin-bottom: 12px;
+	}
+	.address-element input,
+	.address-element textarea {
+		height: 32px;
+	}
+	.address-element textarea {
+		height: 60px;
+	}
+	.close-lay-icon {
+		top: 10px;
+		right: 10px;
+	}
+}
