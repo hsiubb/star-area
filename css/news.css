@@ -40,12 +40,6 @@
 	.commodity-name {
 		font-size: 40px;
 	}
-}
-
-@media (max-width: 1440px) {
-	.commodity-name {
-		font-size: 40px;
-	}
 	.news {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -61,5 +55,14 @@
 		top: auto;
 		right: 0;
 		bottom: 50px;
+	}
+}
+
+@media (max-width: 720px) {
+	.main {
+		padding-top: 100px;
+	}
+	.pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+		margin-right: 20px;
 	}
 }
