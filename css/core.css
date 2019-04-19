@@ -60,6 +60,18 @@ img {
 	background-image: url("../img/backgound-img.png");
 	-webkit-background-size: 100% auto;
 	background-size: 100% auto;
+	background-position-x: 0;
+	background-position-y: top;
+	-webkit-animation: starbg 30s infinite linear;
+	animation: starbg 30s infinite linear;
+}
+@keyframes starbg {
+	0% {
+		background-position-x: 0;
+	}
+	100% {
+		background-position-x: -100vw;
+	}
 }
 .page-header {
 	position: absolute;
