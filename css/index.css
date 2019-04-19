@@ -107,11 +107,11 @@
 	bottom: 200px;
 
 	box-shadow: none;
-	border: 1px solid rgba(255, 255, 255, .1);
+	border: 2px solid rgba(255, 255, 255, .1);
 	transition: all .6s ease;
 }
 .banner .page-btn:hover {
-	border: 1px solid transparent;
+	border: 2px solid transparent;
 	box-shadow: 0 0 5px 1px rgba(255, 255, 255, .3);
 }
 
