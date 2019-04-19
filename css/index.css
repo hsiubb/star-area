@@ -27,6 +27,40 @@
 	text-align: center;
 	letter-spacing: 1em;
 	color: #bfbfbf;
+	-webkit-animation-name:pulse;
+	animation-name:pulse;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-fill-mode: both;
+	animation-duration: 1.5s;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes pulse{
+    0%{
+        -webkit-transform:scale(1);
+        transform:scale(1);
+    }
+    50%{
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    to{
+        -webkit-transform:scale(1);
+        transform:scale(1);
+    }
+}
+@keyframes pulse{
+    0%{
+        -webkit-transform:scale(1);
+        transform:scale(1);
+    }
+    50%{
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+    to{
+        -webkit-transform:scale(1);
+        transform:scale(1);
+    }
 }
 .banner .page-btn {
 	display: none;
