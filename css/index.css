@@ -109,10 +109,12 @@
 	box-shadow: none;
 	border: 2px solid rgba(255, 255, 255, .1);
 	transition: all .6s ease;
+	transform: scale(.9);
 }
 .banner .page-btn:hover {
 	border: 2px solid transparent;
 	box-shadow: 0 0 5px 1px rgba(255, 255, 255, .3);
+	transform: scale(1);
 }
 
 .intro-section {

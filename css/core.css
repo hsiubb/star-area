@@ -131,6 +131,9 @@ img {
 	color: #bfbfbf;
 	text-shadow: 1px 1px 2px #242424;
 }
+.page-navigation .go-login:hover {
+	color: #fff;
+}
 .page-btn {
 	display: block;
 	width: 15em;
