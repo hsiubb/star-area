@@ -27,40 +27,30 @@
 	text-align: center;
 	letter-spacing: 1em;
 	color: #bfbfbf;
-	-webkit-animation-name:pulse;
+	/* -webkit-animation-name:pulse;
 	animation-name:pulse;
 	-webkit-animation-duration: 1.5s;
 	-webkit-animation-fill-mode: both;
 	animation-duration: 1.5s;
-	animation-fill-mode: both;
+	animation-fill-mode: both; */
+	-webkit-animation-name:flipInX;
+	-webkit-backface-visibility:visible !important;
+	animation-name:flipInX;
+	backface-visibility:visible !important;
 }
-@-webkit-keyframes pulse{
-    0%{
-        -webkit-transform:scale(1);
-        transform:scale(1);
-    }
-    50%{
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
-    }
-    to{
-        -webkit-transform:scale(1);
-        transform:scale(1);
-    }
+@-webkit-keyframes flipInX{
+	0%{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) rotateX(90deg);animation-timing-function:ease-in;opacity:0;transform:perspective(400px) rotateX(90deg)}
+	40%{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) rotateX(-20deg);animation-timing-function:ease-in;transform:perspective(400px) rotateX(-20deg)}
+	60%{-webkit-transform:perspective(400px) rotateX(10deg);opacity:1;transform:perspective(400px) rotateX(10deg)}
+	80%{-webkit-transform:perspective(400px) rotateX(-5deg);transform:perspective(400px) rotateX(-5deg)}
+	to{-webkit-transform:perspective(400px);transform:perspective(400px)}
 }
-@keyframes pulse{
-    0%{
-        -webkit-transform:scale(1);
-        transform:scale(1);
-    }
-    50%{
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
-    }
-    to{
-        -webkit-transform:scale(1);
-        transform:scale(1);
-    }
+@keyframes flipInX{
+	0%{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) rotateX(90deg);animation-timing-function:ease-in;opacity:0;transform:perspective(400px) rotateX(90deg)}
+	40%{-webkit-animation-timing-function:ease-in;-webkit-transform:perspective(400px) rotateX(-20deg);animation-timing-function:ease-in;transform:perspective(400px) rotateX(-20deg)}
+	60%{-webkit-transform:perspective(400px) rotateX(10deg);opacity:1;transform:perspective(400px) rotateX(10deg)}
+	80%{-webkit-transform:perspective(400px) rotateX(-5deg);transform:perspective(400px) rotateX(-5deg)}
+	to{-webkit-transform:perspective(400px);transform:perspective(400px)}
 }
 .banner .page-btn {
 	display: none;
