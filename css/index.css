@@ -103,7 +103,8 @@
 	}
 }
 .banner .page-btn {
-	display: none;
+	position: relative;
+	bottom: 200px;
 }
 
 .intro-section {
@@ -227,9 +228,7 @@
 		bottom: 90px;
 	}
 	.banner .page-btn {
-		position: relative;
 		bottom: 60px;
-		display: block;
 	}
 	.intro-section {
 		padding-left: 50px;
