@@ -26,7 +26,87 @@
 			<a class="go-login" href="./login.html">登 录 / 注 册</a>
 		</nav>
 	</header>
-	<main>
+	<main class="page-swiper swiper-container">
+		<article class="swiper-wrapper">
+			<section class="page-slide swiper-slide banner">
+				<h1 class="slogan"><span>我的目标很简单</span><span>就是把世界整个明白</span></h1>
+				<a href="javascript:;" class="page-btn" id="scroll_page">开始探索</a>		
+			</section>
+
+			<section class="page-slide swiper-slide intro-section">
+				<div class="intro-cards">
+					<div class="intro-card">
+						<h3 class="intro-card-title">宇宙的百科全书</h3>
+						<p class="intro-card-content">星域APP将天文学的基础知识进行了归纳整理， 按照学习的难易度分为了三个章节，分别是天体/现象/未解之谜。</p>
+					</div>
+					<div class="intro-card">
+						<h3 class="intro-card-title">每人都有宇宙梦</h3>
+						<p class="intro-card-content">每个人心中都有一个成为宇航员的梦，因此我们加入了剧情游戏的模块，让用户作为宇航员进行太空探索，并将游戏和基础知识结合起来， 记录用户的学习情况并通过游戏进行成果检验。</p>
+					</div>
+					<div class="intro-card">
+						<h3 class="intro-card-title">天文资讯and交流平台</h3>
+						<p class="intro-card-content">星域APP为天文爱好者们提供了及时更新的资讯和实地跟踪天文现象推送提醒功能，还构建了交流平台，让用户可以在社区中找到同好，进行交流。</p>
+					</div>
+					<div class="intro-card download" id="download_btns">
+						<a href="javascript:;" class="page-btn">iOS安装包下载</a>
+						<a href="javascript:;" class="page-btn">Android安装包下载</a>
+					</div>
+				</div>
+				<div class="index-swiper">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="./img/slide1.png" alt=""></div>
+							<div class="swiper-slide"><img src="./img/slide2.png" alt=""></div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+				<footer class="page-footer">
+					<span class="copyright">&copy;星域StarArea2019</span>
+				</footer>
+			</section>
+		</article>
+
+	    <div class="swiper-pagination"></div>
+	</main>
+	<script src="./js/core.js"></script>
+	<script>
+		$().ready(function() {
+			var page_swiper = new Swiper('.page-swiper', {
+				direction: 'vertical',
+				mousewheel: true,
+				speed: 1000,
+				fadeEffect: {crossFade: true},
+				effect: "fade",
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				}
+			});
+
+			var swiper = new Swiper('.intro-section .swiper-container', {
+				autoplay: true,
+				loop: true,
+				effect: "fade",
+				fadeEffect: {crossFade: true},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+				on: {
+					resize: function() {
+						swiper.init();
+					}
+				}
+			});
+
+			$('.page-btn').on('click', function() {
+				page_swiper.slideNext();
+			});
+		});
+	</script>
+	<!-- <main>
 		<div class="banner">
 			<h2 class="slogan"><span>我的目标很简单</span><span>就是把世界整个明白</span></h2>
 			<a href="javascript:;" class="page-btn" id="scroll_page">开始探索</a>		
@@ -93,7 +173,6 @@
 		</footer>
 	</section>
 
-	<script src="./js/core.js"></script>
 	<script>
 		var swiper = new Swiper('.swiper-container', {
 			autoplay: true,
@@ -118,6 +197,6 @@
 		// $('.mobile-btn').on('click', function() {
 		// 	$('.page-navigation ul, .page-navigation .go-login').fadeToggle();
 		// });
-	</script>
+	</script> -->
 </body>
 </html>

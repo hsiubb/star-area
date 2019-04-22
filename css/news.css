@@ -49,38 +49,3 @@ footer {
 	right: 0;
 	left: 0;
 }
-
-@media (max-width: 1440px) {
-	.main {
-		padding-bottom: 120px;
-	}
-	.commodity-name {
-		font-size: 40px;
-	}
-	.news {
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 0;
-	}
-	.pagination.swiper-pagination-bullets {
-		position: absolute;
-		top: auto;
-		right: 0;
-		bottom: 50px;
-	}
-}
-
-@media (max-width: 720px) {
-	.main {
-		padding-top: 100px;
-		padding-bottom: 100px;
-	}
-	.pagination.swiper-pagination-bullets .swiper-pagination-bullet {
-		margin-right: 20px;
-	}
-}

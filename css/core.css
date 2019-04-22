@@ -82,15 +82,15 @@ img {
 }
 .logo {
 	position: relative;
-	top: 75px;
-	left: 75px;
+	top: 60px;
+	left: 60px;
 	height: 92px;
 	background: rgb(36, 36, 36);
 }
 .page-navigation {
 	position: fixed;
 	top: 50%;
-	left: 55px;
+	left: 45px;
 	margin-top: -146px;
 }
 .page-navigation li {
@@ -123,8 +123,8 @@ img {
 }
 .page-navigation .go-login {
 	position: fixed;
-	right: 75px;
-	top: 55px;
+	right: 60px;
+	top: 45px;
 	width: auto;
 	font-size: 16px;
 	line-height: 1.5;
@@ -288,176 +288,13 @@ img {
 	color: #fff;
 }
 
-@media (min-width: 1441px) {
-	.user-panel + .go-login {
-		display: none;
-	}
+.user-panel + .go-login {
+	display: none;
 }
 
-@media (max-width: 1440px) {
-	.page-btn {
-		font-size: 15px;
-	}
-
-	.logo {
-		top: 40px;
-		left: 40px;
-		height: 44px;
-	}
-	.page-navigation {
-		top: 40px;
-		left: auto;
-		right: 140px;
-		margin-top: 0;
-	}
-	.page-navigation li {
-		float: left;
-		margin-bottom: 0;
-		margin-right: 40px;
-	}
-	.page-navigation a {
-		width: auto;
-		font-size: 16px;
-		border-bottom: 1px solid transparent;
-	}
-	.page-navigation .active a,
-	.page-navigation li:hover a {
-		transform: translate(0);
-		border-left: 0 none;
-		border-bottom-color: #fff;
-	}
-	.page-navigation .user-panel {
-		display: none;
-	}
-	.letter-spacing {
-		display: inline;
-	}
-
-	.page-navigation .go-login {
-		top: 40px;
-		right: 50px;
-		font-size: 16px;
-		line-height: 2;
-	}
-
-	.main {
-		padding: 120px 20px 20px;
-	}
-	.show-sm {
-		display: block !important;
-	}
-	.hide-sm {
-		display: none !important;
-	}
-
-	.pagination {
-		position: relative;
-		top: 0;
-		right: 0;
-		width: 100%;
-		margin: 0;
-		clear: both;
-		flex-direction: row-reverse;
-		justify-content: flex-start;
-	}
-	.pagination a {
-		float: left;
-		margin-top: 0;
-		margin-right: 24px;
-	}
-	.nav-btn {
-		float: left;
-	}
-}
-
-@media (max-width: 720px) {
-	.page-btn {
-		font-size: 12px;
-	}
-
-	.logo {
-		top: 20px;
-		left: 20px;
-	}
-	.page-navigation {
-		top: 10px;
-		right: 0;
-		height: 32px;
-		overflow: hidden;
-		padding-top: 32px;
-		transition: height .2s ease-in-out;
-		background-image: url('../img/nav-bg.png');
-		-webkit-background-size: 1px 125px;
-		background-size: 1px 125px;
-	}
-	.page-navigation li {
-		float: none;
-		margin: 0;
-	}
-	.page-navigation a {
-		float: none;
-		display: block;
-		padding: 0 30px 0 10px;
-		font-size: 14px;
-		line-height: 30px;
-		text-align: center;
-	}
-	.page-navigation .active a,
-	.page-navigation li:hover a {
-		border-bottom-color: transparent;
-	}
-	.page-navigation .active {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		background-image: url('../img/nav-arrow.png');
-		background-repeat: no-repeat;
-		background-position: right 8px center;
-		-webkit-background-size: 12px auto;
-		background-size: 12px auto;
-	}
-	.page-navigation .go-login {
-		position: relative;
-		top: 0;
-		right: 0;
-		font-size: 14px;
-	}
-	.go-login.active {
-		position: absolute;
-		white-space: nowrap;
-	}
-
-	.checkbox-icon {
-		width: 12px;
-		height: 12px;
-		margin: -6px;
-	}
-	.checkbox-icon::before {
-		width: 6px;
-		height: 6px;
-		margin: -3px;
-	}
-
-	.buy-btn {
-		font-size: 14px;
-	}
-
-	.main {
-		padding-top: 80px;
-		padding-bottom: 0;
-		letter-spacing: 0;
-	}
-	.pagination a {
-		margin-right: 12px;
-		width: 24px;
-		height: 24px;
-		background-size: 12px;
-		border: 1px solid #444;
-	}
-
-	.copyright {
-		padding: 12px 0;
-		color: #acacac;
-	}
+.page-footer {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 0);
 }
