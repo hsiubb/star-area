@@ -1,78 +1,58 @@
 .main {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	height: 100vh;
 	font-size: 14px;
 	line-height: 2.2em;
 	letter-spacing: .2em;
 	color: #acacac;
 }
-.news-title {
-    display: block;
-    width: 100%;
-	font-size: 22px;
-	line-height: 60px;
-	font-weight: 400;
-	color: #d5d5d5;
+.news-img-swiper {
+	width: 350px;
+	height: 100%;
+	margin-right: 20px;
 }
-.news-subtitle {
-	float: right;
+.news-img-swiper .swiper-wrapper,
+.news-img-swiper .swiper-slide {
+	width: 350px;
+	height: 100%;
+}
+.news-img-swiper .swiper-slide {
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.news-article {
+	height: 100%;
+	padding-right: 10px;
+	overflow-x: visible;
+	overflow-y: auto;
 	font-size: 16px;
-	vertical-align: middle;
-	color: #62605f;
+	line-height: 2;
 }
-.news-content {
-	padding: 24px 0;
-	border-top: 1px solid #acacac;
-	border-bottom: 1px solid #acacac;
+.news-article .news-title {
+	font-size: 36px;
+	white-space: nowrap;
+	line-height: 2;
+	color: #fff;
+	letter-spacing: .1em;
 }
-.news-content p {
-	text-indent: 2.4em;
+.news-article p {
+	margin-bottom: 1em;
+	text-indent: 2em;
 }
-.news-content img {
-	display: block;
-	margin: 12px auto;
-}
-.news-remark {
-	display: block;
-	padding: 12px 70px;
-}
-.news-date {
-	float: right;
-}
-.news-comments {
-	padding: 70px;
-}
-
-.one-comment {
-	position: relative;
-	padding: 24px 24px 24px 124px;
-	line-height: 30px;
-}
-.one-comment:hover {
-	background: #333;
-}
-.comment-avatar {
-	position: relative;
-	top: 0;
-	float: left;
-	width: 66px;
-	height: 66px;
-	margin-left: -100px;
-	border-radius: 50%;
-}
-.user-intro,
-.comment-time {
+p.news-sub-title {
 	font-size: 14px;
-	color: #8f8f8f;
+	color: #a1a1a1;
+	text-indent: 0;
 }
-.comment-time {
-	position: absolute;
-	top: 24px;
-	right: 24px;
-}
-.comment-content {
-	padding-top: 10px;
-	font-size: 14px;
-	line-height: 28px;
-	color: #dadada;
+.news-article img {
+	display: block;
+	margin: 1em auto;
 }
 
 .require-download {
@@ -80,7 +60,8 @@
 	font-size: 14px;
 	letter-spacing: .2em;
 	font-weight: 100;
-	line-height: 60px;
+	line-height: 54px;
+	border-radius: 30px;
 	text-align: center;
 	color: #fff;
 	border: 2px solid #5d5d5d;

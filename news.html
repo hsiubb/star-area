@@ -14,7 +14,7 @@
 	<script src="./js/jquery.js"></script>
 	<script src="./js/swiper.min.js"></script>
 </head>
-<body>
+<body class="space-bg">
 	<header class="page-header">
 		<a href="./index.html"><img src="./img/logo.png" alt="" class="logo"></a>
 		<nav class="page-navigation">
@@ -26,46 +26,38 @@
 			<a class="go-login" href="./login.html">登 录 / 注 册</a>
 		</nav>
 	</header>
-	<main class="main swiper-container">
-		<section class="swiper-wrapper">
-			<a href="./news-detail.html" class="news swiper-slide">
-				<img class="hide-sm" src="./img/news-1.png" alt="">
-				<img class="show-sm" src="./img/news_w-1.png" alt="">
+	<main class="main">
+		<section class="news-list">
+			<a href="./news-detail.html" class="one-news soft-link news-1">
+				<div class="news-board">
+					<p class="news-subtitle">三月推荐</p>
+					<p class="news-title">NASA 骗局</p>
+					<span class="news-index">查看详情</span>
+				</div>
+				<img class="news-ico" src="./img/news-1.png" alt="">
 			</a>
-			<a href="./news-detail.html" class="news swiper-slide">
-				<img class="hide-sm" src="./img/news-2.png" alt="">
-				<img class="show-sm" src="./img/news_w-2.png" alt="">
+			<a href="./news-detail.html" class="one-news soft-link news-2">
+				<div class="news-board">
+					<p class="news-subtitle">二月推荐</p>
+					<p class="news-title">星空之境</p>
+					<span class="news-index">查看详情</span>
+				</div>
+				<img class="news-ico" src="./img/news-2.png" alt="">
 			</a>
-			<a href="./news-detail.html" class="news swiper-slide">
-				<img class="hide-sm" src="./img/news-3.png" alt="">
-				<img class="show-sm" src="./img/news_w-3.png" alt="">
+			<a href="./news-detail.html" class="one-news soft-link news-3">
+				<div class="news-board">
+					<p class="news-subtitle">一月推荐</p>
+					<p class="news-title">宇航员<br>太空那些事</p>
+					<span class="news-index">查看详情</span>
+				</div>
+				<img class="news-ico" src="./img/news-3.png" alt="">
 			</a>
 		</section>
-		<section class="pagination swiper-pagination">
-		</section>
-		<footer>
+		<footer class="page-footer">
 			<span class="copyright">&copy;星域StarArea2019</span>
 		</footer>
 	</main>
 
 	<script src="./js/core.js"></script>
-	<script>
-		var swiper = new Swiper('.swiper-container', {
-			effect: "fade",
-			mousewheel: true,
-			fadeEffect: {crossFade: true},
-			pagination: {
-			    el: '.swiper-pagination',
-				renderBullet: function (index, className) {
-					return '<span class="' + className + '">0' + (index + 1) + '</span>';
-				},
-			},
-			on: {
-				resize: function() {
-					swiper.init();
-				}
-			}
-		});
-	</script>
 </body>
 </html>

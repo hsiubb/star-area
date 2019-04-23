@@ -14,7 +14,7 @@
 	<script src="./js/jquery.js"></script>
 	<script src="./js/swiper.min.js"></script>
 </head>
-<body>
+<body class="space-bg">
 	<header class="page-header">
 		<a href="./index.html"><img src="./img/logo.png" alt="" class="logo"></a>
 		<nav class="page-navigation">
@@ -32,32 +32,51 @@
 		</nav>
 	</header>
 	<main class="main">
-		<a class="one-commodity" href="./commodity.html">
+		<!-- <a class="one-commodity soft-link" href="./commodity.html">
 			<p class="commodity-name">科学之美</p>
 		</a>
-		<a class="one-commodity" href="./commodity.html">
+		<a class="one-commodity soft-link" href="./commodity.html">
 			<p class="commodity-name">手机壳</p>
 		</a>
-		<a class="one-commodity" href="./commodity.html">
+		<a class="one-commodity soft-link" href="./commodity.html">
 			<p class="commodity-name">日历</p>
 		</a>
-		<a class="one-commodity" href="./commodity.html">
+		<a class="one-commodity soft-link" href="./commodity.html">
 			<p class="commodity-name">书签</p>
 		</a>
-		<a class="one-commodity" href="./commodity.html">
+		<a class="one-commodity soft-link" href="./commodity.html">
 			<p class="commodity-name">钥匙扣</p>
-		</a>
+		</a> -->
+		<section class="swiper-container">
+			<div class="swiper-wrapper">
+				<a class="swiper-slide one-commodity soft-link" href="./commodity.html">
+					<img src="./img/exhibit-1.png" alt="">
+				</a>
+				<a class="swiper-slide one-commodity soft-link" href="./commodity.html">
+					<img src="./img/exhibit-2.png" alt="">
+				</a>
+				<a class="swiper-slide one-commodity soft-link" href="./commodity.html">
+					<img src="./img/exhibit-3.png" alt="">
+				</a>
+				<a class="swiper-slide one-commodity soft-link" href="./commodity.html">
+					<img src="./img/exhibit-4.png" alt="">
+				</a>
+				<a class="swiper-slide one-commodity soft-link" href="./commodity.html">
+					<img src="./img/exhibit-5.png" alt="">
+				</a>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</section>
 	</main>
-
+<!-- 389 355 -->
 	<script src="./js/core.js"></script>
 	<script>
 		var swiper = new Swiper('.swiper-container', {
-			effect: "fade",
-			mousewheel: true,
-			fadeEffect: {crossFade: true},
+			slidesPerView: 3,
 			navigation: {
-				nextEl: '.next',
-				prevEl: '.prev',
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
 			},
 			on: {
 				resize: function() {

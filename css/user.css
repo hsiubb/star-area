@@ -1,19 +1,13 @@
 .order-page {
-/*	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	flex-direction: column;
-*/
-	padding-bottom: 80px;
-	font-size: 18px;
+	padding-bottom: 0;
+	font-size: 16px;
 	color: #acacac;
 }
 .order-page-header {
 	width: 100%;
 
-	line-height: 64px;
+	line-height: 1em;
+	padding-bottom: 1em;
 	border-bottom: 1px solid #434343;
 }
 .edit-address {
@@ -54,7 +48,7 @@
 	background: #1b1b1b;
 }
 .order-item-img {
-	max-width: 300px;
+	max-width: 200px;
 }
 .order-item-name {
 	font-size: 18px;
@@ -75,6 +69,8 @@
 	text-align: right;
 }
 .buy-btn {
+	position: relative;
+	top: 10px;
 	margin: auto;
 }
 .received {

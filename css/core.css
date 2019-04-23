@@ -109,6 +109,7 @@ img {
 	border-left: 1px solid transparent;
 	transform: translate(0);
 	text-shadow: 1px 1px 2px #242424;
+	cursor: pointer;
 
 	transition: transform .2s ease;
 }
@@ -138,7 +139,7 @@ img {
 	display: block;
 	width: 15em;
 	margin-bottom: 1em;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 3em;
 	text-align: center;
 	letter-spacing: .2em;
@@ -150,6 +151,15 @@ img {
 .main {
 	min-height: 100vh;
 	padding: 200px 100px 120px 200px;
+
+	opacity: 0;
+	animation: show_main .5s 1 ease-in forwards;
+}
+@keyframes show_main {
+	0% {}
+	100% {
+		opacity: 1;
+	}
 }
 .pagination {
 	align-self: flex-end;
@@ -297,4 +307,24 @@ img {
 	left: 50%;
 	bottom: 0;
 	transform: translate(-50%, 0);
+}
+.commodity-layer {
+	position: fixed;
+	opacity: 0;
+	z-index: 500;
+	background-color: #242424;
+	border: 1px solid #454545;
+	box-shadow: 0 0 3px 1px rgba(0, 0, 0, .3);
+}
+.commodity-layer.status-end {
+	animation: status_end .7s 1 ease forwards;
+}
+@keyframes status_end {
+	0% {}
+	100% {
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
 }

@@ -38,3 +38,24 @@ $('.item-number-input').each(function() {
 		$('.total-price').html('合 &nbsp; 计 <span>￥'+total.toFixed(2)+'</span>')
 	});
 });
+
+let $layer = $('<section class="commodity-layer space-bg"></section>');
+let GLOBAL_WIDTH = $('body').width();
+let GLOBAL_HEIGHT = $('body').height();
+$layer.appendTo('body');
+$('.soft-link, .page-navigation a').each(function(i) {
+	let $this = $(this);
+	$this.on('click', function(e) {
+		e.preventDefault();
+		$layer.css({
+			top: $this.offset().top,
+			left: $this.offset().left,
+			right: GLOBAL_WIDTH - $this.width() - $this.offset().left,
+			bottom: GLOBAL_HEIGHT - $this.height() - $this.offset().top,
+			opacity: 1
+		}).addClass('status-end');
+		setTimeout(function() {
+			location.href = $this.attr('href');
+		}, 700);
+	});
+});

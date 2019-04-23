@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="./css/commodity.css">
 
 	<script src="./js/jquery.js"></script>
+	<script src="./js/swiper.min.js"></script>
 </head>
 <body>
 	<header class="page-header">
@@ -31,63 +32,90 @@
 		</nav>
 	</header>
 	<main class="main">
-		<section class="preview">
-			<img src="./img/commodity-1.png" alt="">
+		<section class="preview swiper-comtainer">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background-image: url('./img/commodity-detail-1.png')"></div>
+				<div class="swiper-slide" style="background-image: url('./img/commodity-detail-2.png')"></div>
+				<div class="swiper-slide" style="background-image: url('./img/commodity-detail-3.png')"></div>
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
 		</section>
 		<section class="commodity-info">
-			<h1 class="commidity-name">《科学之美》系列<br>浩瀚的宇宙</h1>
-			<span class="commidity-price">￥15.00</span>
-			<p class="commidity-intro">
-				探索宏观的世界，从巨大而密集的超星系团到寂静而偏远的行星，马特·特维德为所有对天空着迷的人们奉上了一本简单易懂的读物。
-				<br><br>
-				《科学天下科学之美·浩瀚的宇宙》将带领我们穿越宇宙，经过类星体、喷流、星系等，并介绍一系列关于时空的概念。特维德将追踪恒星的演变以及行星的形成，描述太阳系所在的气泡，并解释为什么我们不能看到我们视野之外的任何东西。
-				<br><br>
+			<h1 class="commodity-name">科学之美：浩瀚的宇宙</h1>
+			<p class="commodity-intro">[美]马特·特维德 著</p>
+			<p class="commodity-price">
+				￥15.00 &emsp;
+				<a href="./cart.html" class="add-to-cart">
+					<span class="view">+</span>
+					<span class="buy">购 买</span>
+				</a>
 			</p>
-			<div>
-				<a href="./order.html" class="commidity-btn buy-now">立即购买</a>
-				<a href="./cart.html" class="commidity-btn add-to-cart">加入购物车</a>
+			<div class="commodity-swiper swiper-container">
+				<div class="swiper-pagination info-pagination"></div>
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<p>《科学之美》是一套以轻巧，美丽见长的流行科普读物，不同于一般的严肃科普读物，旨在激发读者对科学的探索欲望与兴趣。 </p>
+						<p>它将带领我们探索宏观的世界，从巨大而密集的超星系团到寂静而偏远的行星，马特·特维德为所有对天空着迷的人们奉上了一本简单易懂的读物。这本书将带领我们穿越宇宙，对太阳系外的行星系统、黑洞、脉冲星、星云、巨墙、暗物质、红移以及其它更多的事物进行了通俗的解释。书的最后还有一个由数据表、宇宙学常数列表、以及局域宇宙图组成的实用附录。</p>
+					</div>
+					<div class="swiper-slide commodity-specification">
+						<p>平&emsp;&emsp;装：58页</p>
+						<p>纸张材质：胶版纸</p>
+						<p>印&emsp;&emsp;张：3.25</p>
+						<p>开&emsp;&emsp;本：797mm X 1092mm  1 / 24</p>
+						<p>书&emsp;&emsp;号：ISBN 978-7-5357-7748-5</p>
+						<p>出&ensp;版&ensp;社：湖南科技出版社； 第 1 版 ( 2013 年 8 月 1 日 )</p>
+					</div>
+					<div class="swiper-slide">
+						<div class="one-comment clrfix">
+							<div class="comment-user">
+								<img class="comment-avatar" src="./img/avatar-1.jpg" alt="">
+							</div>
+							<p>书的内容是黑白的，图片看的不是很清楚。内容方面有些部分不是很容易理解，不太适合刚接触天文领域的朋友。</p>
+						</div>
+						<div class="one-comment clrfix">
+							<div class="comment-user">
+								<img class="comment-avatar" src="./img/avatar-2.jpg" alt="">
+							</div>
+							<p>还不错的一本书，后面时间、空间和速度的有点难理解，不过还是很有趣！了解到了好多奇奇怪怪的天文知识，很有意思。</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
-		<section class="pagination">
-			<a class="nav-btn cart" href="./cart.html"></a>
-			<a class="nav-btn next" href="#"></a>
-			<a class="nav-btn prev" href="#"></a>
-		</section>
-		<section class="comments">
-			<p class="comment-title">评价</p>
-			<ul>
-				<li class="one-comment clrfix">
-					<div class="comment-user">
-						<img class="comment-avatar" src="./img/avatar-1.jpg" alt="">
-						<p class="comment-user-name">VICEX</p>
-					</div>
-					<p>书的内容是黑白的，图片看的不是很清楚。内容方面有些部分不是很容易理解，不太适合刚接触天文领域的朋友。</p>
-					<span class="time-stamp">2019-04-03</span>
-				</li>
-				<li class="one-comment clrfix">
-					<div class="comment-user">
-						<img class="comment-avatar" src="./img/avatar-2.jpg" alt="">
-						<p class="comment-user-name">Wanqiu</p>
-					</div>
-					<p>还不错的一本书，后面时间、空间和速度的有点难理解，不过还是很有趣哒！！了解到了好多奇奇怪怪的天文知识，很有意思。</p>
-					<span class="time-stamp">2019-02-19</span>
-				</li>
-				<li class="one-comment clrfix">
-					<div class="comment-user">
-						<img class="comment-avatar" src="./img/avatar-3.jpg" alt="">
-						<p class="comment-user-name">HaLaHo</p>
-					</div>
-					<p>其实我觉得书里面的内容不算浅显易懂，如果想象力不够丰富的话很难想象书中描绘的场景，写的比较科学，但真的好难懂……</p>
-					<span class="time-stamp">2019-02-10</span>
-				</li>
-				<li class="no-more">暂无更多评论</li>
-			</ul>
-		</section>
 	</main>
-	<footer>
+	<footer class="page-footer">
 		<span class="copyright">&copy;星域StarArea2019</span>
 	</footer>
 
 	<script src="./js/core.js"></script>
+	<script>
+		var swiper = new Swiper('.preview', {
+			effect: "fade",
+			fadeEffect: {crossFade: true},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			}
+		});
+
+		var tags = ['商 品 简 介', '规 格 参 数', '评 价'];
+		var info_swiper = new Swiper('.commodity-swiper', {
+			effect: "fade",
+			fadeEffect: {crossFade: true},
+			pagination: {
+				el: '.info-pagination',
+				clickable: true,
+				renderBullet: function (index, className) {
+					return '<span class="' + className + '"><span>' + tags[index] + '</span></span>';
+				},
+			},
+		});
+	</script>
 </body>
 </html>
