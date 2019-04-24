@@ -298,6 +298,7 @@
 	display: flex;
 	justify-content: space-between;
 
+	padding-right: 50px;
 	padding-bottom: 0;
 }
 
@@ -307,7 +308,7 @@
 	padding-left: 40px;
 }
 .intro-card {
-	margin-bottom: 20px;
+	margin-bottom: 2vw;
 }
 .intro-card-title {
 	position: relative;
