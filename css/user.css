@@ -84,3 +84,17 @@
 	bottom: 120px;
 	right: 50px;
 }
+
+.empty-list {
+	width: 100%;
+	padding-top: 100px;
+	text-align: center;
+	color: #666;
+}
+.empty-list a {
+	color: inherit;
+	text-decoration: underline;
+}
+.empty-list a:hover {
+	color: #fff;
+}
