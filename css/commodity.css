@@ -101,7 +101,7 @@
 }
 .add-to-cart .buy {
 	font-size: 16px;
-	left: 1em;
+	left: -1em;
 	padding: 0 1.5em;
 	opacity: 0;
 }
@@ -142,12 +142,23 @@
 .info-pagination .swiper-pagination-bullet span {
 	display: inline-block;
 	padding: 0 .5em;
+	width: 96px;
 	font-size: 16px;
 	line-height: 36px;
 }
 .info-pagination .swiper-pagination-bullet-active span {
 	line-height: 35px;
+	/*border-bottom: 3px solid #fff;*/
+}
+.pagination-bar {
+	position: absolute;
+	top: 35px;
+	left: 16.66666%;
+	z-index: 100;
+	width: 96px;
+	margin-left: -48px;
 	border-bottom: 3px solid #fff;
+	border-radius: 3px;
 }
 .commodity-swiper .swiper-wrapper {
 	max-width: 100%;

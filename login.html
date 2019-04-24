@@ -26,6 +26,8 @@
 		</nav>
 	</header>
 	<main class="main login-page">
+		<div class="qrcode-box"><img src="./img/gzh-qrcode.png" alt="">公 众 号</div>
+		<div class="qrcode-box"><img src="./img/download-qrcode.png" alt="">App 下 载</div>
 		<form class="login-board">
 			<div class="login-header">
 				<a class="active" data-type="login">登&nbsp;录</a>
@@ -39,12 +41,12 @@
 
 			<label for="password">
 				<span class="login-label">密&emsp;码</span>
-				<input class="login-input" type="text" id="password" placeholder="请输入密码" />
+				<input class="login-input" type="password" id="password" placeholder="请输入密码" />
 			</label>
 
 			<label class="register-row" for="checkpwd">
 				<span class="login-label">确认密码</span>
-				<input class="login-input" type="text" id="checkpwd" placeholder="请再次输入密码" />
+				<input class="login-input" type="password" id="checkpwd" placeholder="请再次输入密码" />
 			</label>
 
 			<a class="login submit-btn login-row" href="./user.html">登录</a>
@@ -62,6 +64,7 @@
 		$().ready(function() {
 			let $board = $('.login-board');
 			$('.login-header a').on('click', function() {
+				$('.login-input').val('');
 				let type = $(this).data('type');
 				$(this).addClass('active').siblings().removeClass('active');
 				$board[(type == 'login' ? 'remove' : 'add') + 'Class']('register-board');

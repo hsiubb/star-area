@@ -44,6 +44,10 @@ img {
 	clear: both;
 	height: 0;
 }
+.swiper-pagination-bullet {
+	outline: none;
+}
+
 .show-sm {
 	display: none !important;
 }
@@ -130,6 +134,7 @@ img {
 	font-size: 16px;
 	line-height: 1.5;
 	color: #bfbfbf;
+	cursor: pointer;
 	text-shadow: 1px 1px 2px #242424;
 }
 .page-navigation .go-login:hover {
@@ -328,3 +333,4 @@ img {
 		bottom: 0;
 	}
 }
+

@@ -54,6 +54,7 @@
 			</p>
 			<div class="commodity-swiper swiper-container">
 				<div class="swiper-pagination info-pagination"></div>
+				<span class="pagination-bar"></span>
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<p>《科学之美》是一套以轻巧，美丽见长的流行科普读物，不同于一般的严肃科普读物，旨在激发读者对科学的探索欲望与兴趣。 </p>
@@ -104,9 +105,11 @@
 			}
 		});
 
+		var $page_bar = $('.pagination-bar');
 		var tags = ['商 品 简 介', '规 格 参 数', '评 价'];
 		var info_swiper = new Swiper('.commodity-swiper', {
 			effect: "fade",
+			simulateTouch : false,
 			fadeEffect: {crossFade: true},
 			pagination: {
 				el: '.info-pagination',
@@ -115,6 +118,14 @@
 					return '<span class="' + className + '"><span>' + tags[index] + '</span></span>';
 				},
 			},
+			on: {
+				slideChangeTransitionStart: function() {
+					var left = $('.info-pagination .swiper-pagination-bullet-active span').position().left + 48;
+					$page_bar.animate({
+						left: left
+					}, 350);
+				}
+			}
 		});
 	</script>
 </body>

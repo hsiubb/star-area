@@ -63,7 +63,7 @@
 	right: 10px;
 }
 .one-commodity:hover img {
-	animation: ico_animate 1s linear infinite;
+	animation: ico_animate 2.2s linear infinite;
 }
 @keyframes ico_animate {
 	0% {
@@ -112,4 +112,9 @@
 	background-size: 50% auto;
 
 	transform: translate(-50%, 100px);
+}
+.pagination {
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
 }
