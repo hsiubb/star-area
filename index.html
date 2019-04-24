@@ -73,6 +73,9 @@
 
 	    <div class="swiper-pagination"></div>
 	</main>
+	<div class="qrcode-layer">
+		<img src="./img/download-qrcode.png" alt="">
+	</div>
 	<script src="./js/core.js"></script>
 	<script>
 		$().ready(function() {
@@ -104,102 +107,21 @@
 				}
 			});
 
-			$('.page-btn').on('click', function() {
+			$('#scroll_page').on('click', function() {
 				page_swiper.slideNext();
+			});
+
+			$('#download_btns').on('click', '.page-btn', function() {
+				$('.qrcode-layer').addClass('status-end').animate({
+					opacity: 1
+				});
+			});
+			$('.qrcode-layer').on('click', function() {
+				$(this).animate({opacity: 0}, function() {
+					$(this).removeClass('status-end')
+				});
 			});
 		});
 	</script>
-	<!-- <main>
-		<div class="banner">
-			<h2 class="slogan"><span>我的目标很简单</span><span>就是把世界整个明白</span></h2>
-			<a href="javascript:;" class="page-btn" id="scroll_page">开始探索</a>		
-		</div>
-
-		<section class="main-section intro-section">
-			<div class="intro-cards">
-				<div class="intro-card">
-					<h3 class="intro-card-title">宇宙的百科全书</h3>
-					<p class="intro-card-content">星域APP将天文学的基础知识进行了归纳整理， 按照学习的难易度分为了三个章节，分别是天体/现象/未解之谜。</p>
-				</div>
-				<div class="intro-card">
-					<h3 class="intro-card-title">每人都有宇宙梦</h3>
-					<p class="intro-card-content">每个人心中都有一个成为宇航员的梦，因此我们加入了剧情游戏的模块，让用户作为宇航员进行太空探索，并将游戏和基础知识结合起来， 记录用户的学习情况并通过游戏进行成果检验。</p>
-				</div>
-				<div class="intro-card">
-					<h3 class="intro-card-title">天文资讯and交流平台</h3>
-					<p class="intro-card-content">星域APP为天文爱好者们提供了及时更新的资讯和实地跟踪天文现象推送提醒功能，还构建了交流平台，让用户可以在社区中找到同好，进行交流。</p>
-				</div>
-				<div class="intro-card download" id="download_btns">
-					<a href="javascript:;" class="page-btn">iOS安装包下载</a>
-					<a href="javascript:;" class="page-btn">Android安装包下载</a>
-				</div>
-			</div>
-			<div class="index-swiper">
-				<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="./img/slide1.png" alt=""></div>
-						<div class="swiper-slide"><img src="./img/slide2.png" alt=""></div>
-					</div>
-					<div class="swiper-button-next"></div>
-					<div class="swiper-button-prev"></div>
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<section class="project clrfix">
-		<img src="./img/logo.png" alt="" class="project-logo">
-		<div class="project-blocks">
-			<div class="project-block">
-				<p>项目名称：星域STARAREA</p>
-				<p>主创团队：咸鱼毕设施工队</p>
-				<p>成员名单：红衣轩/70/阿点</p>
-			</div>
-			<div class="project-block">
-				<p>视频来源：NASA / @某一个博主</p>
-				<p>图片来源：NASA / The Panoramas</p>
-				<p>文章来源：霍金语录 /  NASA / 凤凰新闻网 <br> 人民日报 / 新浪博客 / 中国天文台</p>
-			</div>
-			<div class="project-block project-blocks">
-				<div class="project-qrcode">
-					<p>公众号</p>
-					<img src="./img/qrcode.jpg" alt="">
-				</div>
-				<div class="project-qrcode">
-					<p>app 下载</p>
-					<img src="./img/qrcode.jpg" alt="">
-				</div>
-			</div>
-		</div>
-		<footer>
-			<span class="copyright">&copy;星域StarArea2019</span>
-		</footer>
-	</section>
-
-	<script>
-		var swiper = new Swiper('.swiper-container', {
-			autoplay: true,
-			loop: true,
-			effect: "fade",
-			fadeEffect: {crossFade: true},
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-			on: {
-				resize: function() {
-					swiper.init();
-				}
-			}
-		});
-		$('#scroll_page').on('click', function() {
-			$('html, body').animate({
-				scrollTop: window.innerHeight * 1.1
-			}, 800);
-		});
-		// $('.mobile-btn').on('click', function() {
-		// 	$('.page-navigation ul, .page-navigation .go-login').fadeToggle();
-		// });
-	</script> -->
 </body>
 </html>

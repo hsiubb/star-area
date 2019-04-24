@@ -54,6 +54,9 @@
 			<span class="copyright">&copy;星域StarArea2019</span>
 		</footer>
 	</main>
+	<div class="qrcode-layer">
+		<img src="./img/download-qrcode.png" alt="">
+	</div>
 
 	<script src="./js/core.js"></script>
 	<script>
@@ -94,6 +97,17 @@
 				swiper.slideTo(tar - 1);
 				cur = tar;
 			}
+		});
+
+		$('.require-download').on('click', function() {
+			$('.qrcode-layer').addClass('status-end').animate({
+				opacity: 1
+			});
+		});
+		$('.qrcode-layer').on('click', function() {
+			$(this).animate({opacity: 0}, function() {
+				$(this).removeClass('status-end')
+			});
 		});
 	</script>
 </body>

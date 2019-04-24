@@ -304,6 +304,13 @@
 
 .intro-cards {
 	flex: 1;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	max-width: 750px;
 	padding-left: 40px;
 }

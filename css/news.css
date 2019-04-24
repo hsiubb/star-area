@@ -27,7 +27,7 @@
 	left: 76vw;
 }
 .one-news:hover {
-	animation: ico_animate 1s linear infinite;
+	animation: ico_animate 1.3s linear infinite;
 }
 @keyframes ico_animate {
 	0% {
